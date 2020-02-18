@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Github list of repos</title>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <section class="form">
+              <h1>Github list of repos</h1>
+              <p>Enter a GitHub user handle:
+      
+              <form id="js-form">
+                <label id="search-label" for ="gitHandle">
+                <input type="text" name="gitHandle"placeholder="username" id="js-gitHandle" required></label>
+                <br>
+                <button type="submit" role="search" id="find-btn">Search</button>
+              </form>
+            </section>
+              <p id="js-error-message" class="error-message"></p>
+      
+              <div class="flex-container">
+                <section id="results" class="hidden">
+                    <h2 class="userSearch">Users: </h2>
+                    <ul id="results-list"></ul>
+                </section>
+              </div>  
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+    
+    </html>
